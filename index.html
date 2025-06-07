@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5 Tasks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes bounceArrow {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-bounce-arrow {
+            animation: bounceArrow 1.2s infinite;
+        }
+    </style>
+</head>
+
+<body
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 font-sans">
+
+    <div
+        class="max-w-5xl w-full mx-auto p-6 md:p-12 bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 rounded-3xl shadow-2xl">
+        <h1 class="text-5xl font-extrabold text-center text-gray-900 mb-3"> Week 5</h1>
+        <p class="text-center text-gray-600 text-lg mb-10 italic">Explore two beautifully crafted tasks with real-time
+            validation and dynamic interactions.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Task 1  -->
+            <div
+                class="bg-white bg-opacity-20 backdrop-blur-lg p-6 rounded-2xl border border-white border-opacity-30 shadow-xl transition transform hover:scale-[1.03] hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">🧾 Task 1: Registration Form</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">{Both login & Sign Up}</h2>
+                <p class="text-gray-700 text-sm leading-relaxed mb-5">
+                    A fully functional registration form with validation. It checks for a valid name, email, and secure
+                    password. Submit button activates only when all inputs are valid.
+                </p>
+                <div class="flex flex-col items-center">
+                    <div class="text-3xl text-indigo-600 animate-bounce-arrow mb-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-10 h-8 text-black animate-bounce-arrow"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4a1 1 0 011 1v11.586l4.293-4.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L11 16.586V5a1 1 0 011-1z" />
+                        </svg>
+                    </div>
+                    <a href="sign.html"
+                        class="px-6 py-3 rounded-full bg-gradient-to-r from-gray-600 to-gray-400  text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        ✨ Click Here to View Task
+                    </a>
+                </div>
+            </div>
+
+            <!-- Task 2  -->
+            <div
+                class="bg-white bg-opacity-20 backdrop-blur-lg p-6 rounded-2xl border border-white border-opacity-30 shadow-xl transition transform hover:scale-[1.03] hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">📬 Task 2:Message-counter</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">{Contact form}</h2>
+                <p class="text-gray-700 text-sm leading-relaxed mb-5">
+                    An elegant contact form with email, subject, and message fields. Includes a real-time character
+                    counter and disables submission until inputs are valid.
+                </p>
+                <div class="flex flex-col items-center">
+                    <div class="text-3xl text-blue-600 animate-bounce-arrow mb-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-10 h-8 text-black animate-bounce-arrow"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4a1 1 0 011 1v11.586l4.293-4.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L11 16.586V5a1 1 0 011-1z" />
+                        </svg>
+                    </div>
+                    <a href="contact.html"
+                        class="px-6 py-3 rounded-full bg-gradient-to-r from-gray-600 to-gray-400  text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        ✨ Click Here to View Task
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <p class="text-center text-xs text-gray-500 mt-12"> Styled like a Pro</p>
+    </div>
+
+</body>
+
+</html>

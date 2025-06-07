@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300">
+
+  <form id="validateF"
+    class=" max-w-md bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-30 rounded-2xl px-8 py-10 shadow-2xl space-y-5">
+    
+    <h1 class="text-3xl font-extrabold text-center text-gray-800 drop-shadow-sm">
+      Create Your Account
+    </h1>
+
+
+    <div class="flex flex-col">
+      <input
+        type="text"
+        id="Uname"
+        placeholder="User Name"
+        class="p-3 rounded-lg border border-gray-300 bg-white bg-opacity-80 text-gray-800 placeholder-gray-500 text-sm font-normal focus:outline-none focus:ring-2 focus:ring-blue-300"
+      />
+      <span id="uname-error" class="text-red-500 text-xs mt-1"></span>
+    </div>
+
+ 
+    <div class="flex flex-col">
+      <input
+        type="email"
+        id="mail"
+        placeholder="Email"
+        class="p-3 rounded-lg border border-gray-300 bg-white bg-opacity-80 text-gray-800 placeholder-gray-500 text-sm font-normal focus:outline-none focus:ring-2 focus:ring-blue-300"
+      />
+      <span id="mail-error" class="text-gray-700 text-xs mt-1"></span>
+    </div>
+
+    
+    <div class="flex flex-col">
+      <input
+        type="password"
+        id="passW"
+        placeholder="Password"
+        class="p-3 rounded-lg border border-gray-300 bg-white bg-opacity-80 text-gray-800 placeholder-gray-500 text-sm font-normal focus:outline-none focus:ring-2 focus:ring-blue-300"
+      />
+      <span id="pass-error" class="text-gray-700 text-xs mt-1"></span>
+    </div>
+
+  
+    <div class="flex flex-col">
+      <input
+        type="password"
+        id="passW2"
+        placeholder="Confirm Password"
+        class="p-3 rounded-lg border border-gray-300 bg-white bg-opacity-80 text-gray-800 placeholder-gray-500 text-sm font-normal focus:outline-none focus:ring-2 focus:ring-blue-300"
+      />
+      <span id="pass2-error" class="text-gray-700 text-xs mt-1"></span>
+    </div>
+
+    
+    <button
+      type="submit"
+      id="submitBtn"
+      disabled
+      class="w-full py-3 bg-gradient-to-r from-gray-800 to-gray-600 text-white font-bold rounded-lg transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+    >
+      Sign Up
+    </button>
+
+   
+    <p class="text-center text-sm text-gray-700 mt-4">
+      Already have an account?
+      <a href="login.html" class="text-blue-600 hover:underline font-medium">Login</a>
+    </p>
+  </form>
+
+  <script src="sign.js"></script>
+</body>
+</html>
